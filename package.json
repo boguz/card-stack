@@ -1,0 +1,31 @@
+{
+  "name": "card-stack",
+  "version": "0.0.1",
+  "description": "A lightweight library for scroll animated stacked cards",
+  "main": "lib/index.js",
+  "module": "dist/'card-stack.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "npm run build:lig && npm run build:dist",
+    "build:lib": "tsc",
+    "bu8ild:dist": "rollup -c",
+    "clean": "rm -rf lib dist",
+    "dev": "rollup -c --watch"
+  },
+  "keywords": [
+    "cards",
+    "stack",
+    "stacked cards",
+    "scroll",
+    "animated"
+  ],
+  "author": "Luis Pato",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "rollup": "^2.79.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^5.7.2"
+  }
+}
